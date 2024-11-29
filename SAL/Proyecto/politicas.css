@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #004173;
+    padding: 10px;
+    border: 5px black solid;
+    border-radius: 12px;
+    font-size: 20px; 
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: #0979b0;
+    border-radius: 5px;
+}
+
+#titulo-principal {
+    text-align: center;
+    font-size: 2.5rem; /* Cambiado para ser más flexible */
+    margin-top: 20px;
+}
+
+#texto {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .seccion-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 45%; /* Adjusts the size of footer sections */
+    margin: 10px;
+}
+
+.titulo-pie {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer a:hover {
+    color: #004173;
+}
+
+.forma-contacto {
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header a {
+        padding: 8px;
+        font-size: 1rem; /* Reducimos el tamaño en pantallas pequeñas */
+    }
+
+    #titulo-principal {
+        font-size: 2rem;
+    }
+
+    #texto {
+        font-size: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .seccion-pie {
+        flex: 1 1 100%; /* Las secciones ocupan toda la pantalla */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    #titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    #texto {
+        font-size: 0.9rem;
+    }
+}
